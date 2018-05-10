@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Potência</title>
+    </head>
+    <script>
+
+        function pot(base ,exp){
+            if (exp == 0){
+                return 1;
+            }
+            else{
+                return(base * pot(base , exp - 1))
+            }
+        }
+
+        var x = pot(3 ,4);
+        alert(x);
+
+    </script>
+    <body>
+    </body>
+</html
